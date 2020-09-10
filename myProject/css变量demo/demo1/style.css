@@ -1,0 +1,71 @@
+
+/*  css变量存储   */
+
+/* 设置全局变量  */
+:root{    
+    --main-bg-color: #f4f4f4;
+    --main-txt-color: #333;
+    --header-bg-color: #6767cc;
+    --header-txt-color: #fff;
+    --container-width: 90%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+}
+header#main-header{
+    background-color: var(--header-bg-color);
+    color: var(--header-txt-color);
+}
+.container{
+    width: var(--container-width);
+    margin: 20px auto;
+}
+header#main-header h1{
+    margin: 0;
+    padding: 0;
+}
+
+/*   设置局部变量  */
+.box{
+    --box-bg-color: #ddd;
+    --box-border-color: #06c;
+    --box-padding: 5px 10px;
+    --box-shadow-h-offset: 10px;
+    --box-shadow-v-offset: 5px;
+    --bpx-shadow-blur: 5px;
+}
+
+.box{
+    background-color: var(--box-bg-color);
+    border: var(--box-border-color);
+    padding: var(--box-padding);
+    box-shadow: 
+    var(--box-shadow-h-offset)
+    var(--box-shadow-v-offset)
+    var(--bpx-shadow-blur)
+    var(--box-border-color);
+}
+.box h1{
+    color: var(--box-border-color);
+}
+.grid{
+    --gap: 20;
+}
+.grid{      /*   栅格布局 */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: calc(var(--gap) * 1px);
+    align-items: center;
+}
+.box p{
+    /*  变量重写  */
+    /* 第一种
+    --box-border-color: #555;
+    color: var(--box-border-color) */
+    color: var(--box-p-color,#555) ;
+}

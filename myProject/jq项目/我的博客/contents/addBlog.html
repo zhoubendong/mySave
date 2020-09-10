@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>东羽个人博客</title>
+    <meta name="keywords" content="个人博客,WEB学习,WEB学习博客,东羽个人博客" />
+    <meta name="description" content="个人博客,WEB学习,WEB学习博客,东羽个人博客" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/addBlog.css">
+    <link href="../css/m.css" rel="stylesheet">
+    <script type="text/javascript" charset="utf-8" src="../static/utf8-php/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../static/utf8-php/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="../static/utf8-php/lang/zh-cn/zh-cn.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/addBlog.js"></script>   
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.easyfader.min.js"></script>
+    <script src="../js/hc-sticky.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/scrollReveal.js"></script>
+</head>
+
+<body>
+    <header class="header-navigation" id="header">
+        <nav>
+            <div class="logo">
+                <a href="http://www.17sucai.com">东羽博客</a>
+            </div>
+            <h2 id="mnavh">
+                <span class="navicon"></span>
+            </h2>
+            <ul id="starlist">
+                <li>
+                    <a href="../index.html">首页</a>
+                </li>
+                <li>
+                    <a href="addBlog.html">写博客</a>
+                </li>
+
+                <li>
+                    <a href="diary.html">博客日记</a>
+                </li>
+                <li class="menu">
+                    <a href="#">学无止境</a>
+                    <ul class="sub">
+                        <li>
+                            <a href="live.html">慢生活</a>
+                        </li>
+                        <li>
+                            <a href="nice.html">美文欣赏</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="about.html">关于我</a>
+                </li>
+            </ul>
+            <div class="login">
+                <div class="login-con">
+                    <img src="../images/登录.png" alt="">
+                    <a href="">登录</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <article>
+        <div class="editor_con">
+            <div class="warpper">
+                <div class="con">
+                    <span>标题：</span>
+                    <input class="title" type="text" maxlength="100" placeholder="请输入标题">
+                </div>
+                <script id="editor" type="text/plain" style="width:100%;height:300px;"></script>
+                <button onclick="insertHtml()">插入图片</button>
+                
+            </div>
+
+            <div class="con classify">
+                <span>文章分类：</span>
+                <i for="">慢生活</i>
+                <input type="radio" name="category" value="慢生活" checked>
+                <i for="">美文欣赏</i>
+                <input type="radio" name="category" value="美文欣赏">
+                <i for="">技术文章</i>
+                <input type="radio" name="category" value="技术文章">
+            </div>
+            <div class="con label">
+                <span>文章标签：</span>
+                <input type="text" id="label" maxlength="10" placeholder="可不写，10字符内 ">
+            </div>
+        </div>
+        <div id="btns">           
+            <input id="add" type="button" value="发布文章" />
+            <script src="../js/msgbox.js"></script>
+        </div>
+        
+    </article>
+
+    <footer>
+        <p>Design by
+            <a href="http://www.dystep.club" target="_blank">东羽博客</a>
+            <a href="#">© 2019 east | </a>
+
+        </p>
+    </footer>
+    <a href="#" class="cd-top">Top</a>
+</body>
+
+</html>

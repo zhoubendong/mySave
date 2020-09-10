@@ -1,0 +1,105 @@
+html, body {
+    position: relative;
+    height: 100%;
+  }
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+.activity_content{
+    width: 1119px;
+    margin: 28px auto;
+    position: relative;
+}
+.activity_content .date{
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    text-align: center;
+} 
+.activity_content .date h1{
+    color: #ef7b00;
+    font-size: 56px;
+    font-weight: bold;
+    margin: 0;
+}
+.activity_content .date p{
+    color: #888;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 25px;
+}
+.activity_content .swiper-container{
+    width: 600px;
+    height: 320px;
+    margin: 10px auto;
+}
+
+.activity_content .swiper-container .swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-pagination .swiper-pagination-bullet{
+    opacity:4.3;
+}
+
+.activity_content .title{
+    width: 980px;
+    /*background-color: pink;*/
+    position: absolute;
+    top: 340px;
+    padding-left: 80px;
+    text-align: center;
+}
+.activity_content .title a{
+    font-size: 18px;
+    color: #ef7b00;
+    text-decoration: none;
+}
+.activity_content .title span{
+    color: #bbb;
+}
+.activity_content .title span a{
+    color: #bbb;
+    font-size: 12px;
+    text-decoration: none;
+}
+.activity_content .describe{
+    position: absolute;
+    top: 400px;
+    left: 0;
+    background-color: #f9f9f9;
+    height: 94px;
+    width: 1119px;
+    padding: 23px;
+}
+.activity_content .describe p{
+    font-size: 15px;
+    color: #666;
+    text-indent: 31px;
+}

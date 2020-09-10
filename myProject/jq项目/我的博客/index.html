@@ -1,0 +1,357 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>东羽个人博客</title>
+  <meta name="keywords" content="个人博客,WEB学习,WEB学习博客,东羽个人博客" />
+  <meta name="description" content="个人博客,WEB学习,WEB学习博客,东羽个人博客" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <link href="css/base.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link href="css/m.css" rel="stylesheet">
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.easyfader.min.js"></script>
+  <script src="js/hc-sticky.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/scrollReveal.js"></script>
+
+
+  <!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <header class="header-navigation" id="header">
+    <nav>
+      <div class="logo">
+        <img src="" alt="">
+        <a href="#">东羽博客</a>
+      </div>
+      <h2 id="mnavh">
+        <span class="navicon"></span>
+      </h2>
+      <ul id="starlist">
+        <li>
+          <a href="index.html">首页</a>
+        </li>
+        <li>
+          <a href="contents/addBlog.html">写博客</a>
+        </li>
+
+        <li>
+          <a href="contents/diary.html">博客日记</a>
+        </li>
+        <li class="menu">
+          <a href="#">学无止境</a>
+          <ul class="sub">
+            <li>
+              <a href="contents/live.html">慢生活</a>
+            </li>
+            <li>
+              <a href="contents/nice.html">美文欣赏</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="contents/about.html">关于我</a>
+        </li>
+      </ul>
+      <div class="login">
+        <div class="login-con">
+          <img src="images/登录.png" alt="">
+          <a href="">登录</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <article>
+    <!--banner begin-->
+    <div class="banner">
+      <div id="banner" class="fader">
+        <li class="slide">
+          <a href="/" target="_blank">
+            <img src="images/1.jpg">
+            <span class="imginfo">轮播图一（支持组件化开发）</span>
+          </a>
+        </li>
+        <li class="slide">
+          <a href="/" target="_blank">
+            <img src="images/2.jpg">
+            <span class="imginfo">轮播图二（支持组件化开发）</span>
+          </a>
+        </li>
+        <li class="slide">
+          <a href="/" target="_blank">
+            <img src="images/3.jpg">
+            <span class="imginfo">轮播图三（支持组件化开发）</span>
+          </a>
+        </li>
+        <div class="fader_controls">
+          <div class="page prev" data-target="prev">&lsaquo;</div>
+          <div class="page next" data-target="next">&rsaquo;</div>
+          <ul class="pager_list">
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--banner end-->
+    <div class="toppic">
+      <li>
+        <a href="/" target="_blank">
+          <i>
+            <img src="images/1.jpg">
+          </i>
+          <h2>慢生活</h2>
+          <span>学无止境</span>
+        </a>
+      </li>
+      <li>
+        <a href="/" target="_blank">
+          <i>
+            <img src="images/2.jpg">
+          </i>
+          <h2>美文欣赏</h2>
+          <span>学无止境</span>
+        </a>
+      </li>
+    </div>
+    <main>
+      <!-- <div class="title">
+            <div class="con">
+              <a href="#" class="titleText">
+                <img src="images/188363-106.jpg">
+                <p>第十五届中国</p>
+              </a>
+            </div>
+            <div class="con">
+              <a href="#" class="titleText">
+                <img src="images/188363-106.jpg">
+                <p>第十五届中国</p>
+              </a>
+            </div>
+            <div class="con">
+              <a href="#" class="titleText">
+                <img src="images/188363-106.jpg">
+                <p>第十五届中国</p>
+              </a>
+            </div>
+            <div class="con">
+              <a href="#" class="titleText">
+                <img src="images/188363-106.jpg">
+                <p>第十五届中国</p>
+              </a>
+            </div>
+          </div> -->
+      <div class="news_box">
+        <ul>
+          <li>
+            <i>
+              <a href="/">
+                <img src="images/1.jpg">
+              </a>
+            </i>
+            <h3>
+              <a href="/">图文一</a>
+            </h3>
+          </li>
+          <li>
+            <i>
+              <a href="/">
+                <img src="images/2.jpg">
+              </a>
+            </i>
+            <h3>
+              <a href="/">图文二</a>
+            </h3>
+          </li>
+          <li>
+            <i>
+              <a href="/">
+                <img src="images/3.jpg">
+              </a>
+            </i>
+            <h3>
+              <a href="/">图文三</a>
+            </h3>
+          </li>
+          <li>
+            <i>
+              <a href="/">
+                <img src="images/4.jpg">
+              </a>
+            </i>
+            <h3>
+              <a href="/">图文四</a>
+            </h3>
+          </li>
+        </ul>
+      </div>
+
+      <div class="blogtab">
+        <ul id="blogtab">
+          <li class="current">最新文章</li>
+          <div class="searchbox">
+            <div id="search_bar" class="search_bar">
+              <form>
+                <input class="input" placeholder="想搜点什么呢.." type="text" name="keyboard" id="keyboard">
+                <p class="search_ico">
+                  <span></span>
+                </p>
+              </form>
+            </div>
+          </div>
+        </ul>
+        <!-- 文章 -->
+        <div class="show_blogs"></div>
+
+        <div class="pinlun">
+          <div class="pin_con">
+            <div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+            <script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js"></script>
+            <script type="text/javascript">
+              window.changyan.api.config({
+                appid: 'cyu8vXhHd',
+                conf: 'prod_c3888a6493d764ae9e4275aecd5ba977'
+              });
+            </script>
+          </div>
+        </div>
+
+      </div>
+    </main>
+    <aside class="r_box">
+      <div class="about_me">
+        <h2>博主简介</h2>
+        <ul>
+          <i>
+            <a href="contents/about.html">
+              <img src="images/狼1.jpg">
+            </a>
+          </i>
+          <p>
+            <b>东羽</b>，本博客用于记录平时工作和学习中的知识点，总结经验，用于分享，如有错误地方烦请指正。一直潜心研究web前端技术，一边工作一边积累经验，分享一些SEO优化等心得。</p>
+        </ul>
+      </div>
+
+      <div class="fenlei">
+        <h2>文章分类</h2>
+        <ul>
+          <li>
+            <a href="/">日记</a>
+          </li>
+          <li>
+            <a href="/">慢生活</a>
+          </li>
+          <li>
+            <a href="/">美文欣赏</a>
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="tuijian">
+        <h2 id="tab">
+          <a href="#" class="current">活动公告</a>
+          <a href="#">点击排行</a>
+          <a href="#">站长推荐</a>
+        </h2>
+
+        <div id="content">
+          <ul style="display:block;">
+            <li>
+              <a href="/">第二届 优秀个人博客模板比赛参选活动</a>
+            </li>
+            <li>
+              <a href="/">【活动作品】柠檬绿兔小白个人博客模板</a>
+            </li>
+            <li>
+              <a href="/">帝国cms 列表页调用子栏目，没有则不显示栏目名称</a>
+            </li>
+            <li>
+              <a href="/">2014年度优秀个人博客评选活动</a>
+            </li>
+            <li>
+              <a href="/">你是什么人便会遇上什么人</a>
+            </li>
+            <li>
+              <a href="/">帝国cms 列表页调用子栏目，没有则不显示栏目名称</a>
+            </li>
+            <li>
+              <a href="/">第二届 优秀个人博客模板比赛参选活动</a>
+            </li>
+            <li>
+              <a href="/">个人博客模板《绅士》后台管理</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="/">你是什么人便会遇上什么人</a>
+            </li>
+            <li>
+              <a href="/">帝国cms 列表页调用子栏目，没有则不显示栏目名称</a>
+            </li>
+            <li>
+              <a href="/">第二届 优秀个人博客模板比赛参选活动</a>
+            </li>
+            <li>
+              <a href="/">个人博客模板《绅士》后台管理</a>
+            </li>
+            <li>
+              <a href="/">你是什么人便会遇上什么人</a>
+            </li>
+            <li>
+              <a href="/">帝国cms 列表页调用子栏目，没有则不显示栏目名称</a>
+            </li>
+            <li>
+              <a href="/">第二届 优秀个人博客模板比赛参选活动</a>
+            </li>
+            <li>
+              <a href="/">黑色质感时间轴html5个人博客模板</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="/">个人博客</a>
+            </li>
+            <li>
+              <a href="/">东羽X设计师博客-一个热爱生活的设计师</a>
+            </li>
+            <li>
+              <a href="/">东羽博客，我看到了你的坚持！</a>
+            </li>
+            <li>
+              <a href="/">程序员创业，就得“豁得出去”！</a>
+            </li>
+            <li>
+              <a href="/">东羽X 一个90后年轻站长！我们是对手亦是朋友！</a>
+            </li>
+            <li>
+              <a href="/">《奋斗电商》看知名微商如何做博客引流？</a>
+            </li>
+            <li>
+              <a href="/">《寻之旅》一个关于旅游，游记的个人博客</a>
+            </li>
+            <li>
+              <a href="/">【匆匆那些年】总结个人博客经历的这四年</a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+
+
+    </aside>
+  </article>
+  <footer>
+    <p>Design by
+      <a href="http://www.dystep.club" target="_blank">东羽博客</a>
+      <a href="#">© 2019 east | </a>
+    </p>
+  </footer>
+  <a href="#" class="cd-top">Top</a>
+</body>
+
+</html>

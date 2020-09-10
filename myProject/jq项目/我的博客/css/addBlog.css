@@ -1,0 +1,53 @@
+
+
+.editor_con .con{
+  height: 50px;
+  text-align: center;
+  background-color: #fff;
+
+}
+.editor_con span{
+  display: inline-block; 
+  font-size: 22px;
+  color: #3690cf;
+  margin-top: 7px;
+
+}
+.editor_con .con .title{
+  width: 60%;
+  height: 35px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid #3690cf;
+}
+.editor_con .warpper{
+  box-shadow: 5px 5px 5px 5px #ccc;
+  -webkit-box-shadow: 5px 5px 5px 5px #ccc;
+  -moz-box-shadow: 5px 5px 5px 5px #ccc;
+}
+.classify{
+  background-color: #fff;
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+}
+.classify input{
+  vertical-align: -6px;
+  width: 20px;
+  height: 20px;
+}
+i{
+  display: block;
+  margin: 20px 10px 10px 10px;
+}
+.classify i{
+  display:inline-block;
+  margin-top: 0;
+}
+.label input{
+  /* outline: none; */
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid #3690cf;
+}

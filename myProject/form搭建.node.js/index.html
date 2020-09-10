@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Web前端开发</title>
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/animate.css/3.7.0/animate.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">	
+</head>
+<body>
+	<div class="container">
+		<h1 class="brand"><span>Web</span>前端开发技术交流群</h1>
+		<div class="wrapper animated bounceInLeft">
+			<div class="company-info">
+				<h3>Web前端开发技术交流群</h3>
+				<ul>
+					<li><i class="fa fa-road"></i>；天津市滨海新区</li>
+					<li><i class="fa fa-phone"></i>：13920438325</li>
+					<li><i class="fa fa-envelope"></i>：1418307779@qq.com</li>
+				</ul>
+			</div>
+			<div class="contact">
+				<h3>邮件联系</h3>
+				<div class="alert">信息发送成功</div>
+				<form id="contactForm" action="">
+					<p>
+						<label>姓名</label>
+						<input type="text" id="name" name="name">
+					</p>
+					<p>
+						<label>公司</label>
+						<input type="text" id="company" name="company">
+					</p>
+					<p>
+						<label>邮件</label>
+						<input type="text" id="email" name="email">
+					</p>
+					<p>
+						<label>电话</label>
+						<input type="text" id="phone" name="phone">
+					</p>
+					<p class="full">
+						<label>信息</label>
+						<textarea name="message" id="message" rows="5"></textarea>
+					</p>
+					<p class="full">
+						<button type="submit">提交</button>
+					</p>
+
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
