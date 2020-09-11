@@ -18,6 +18,8 @@
     7.stopBubble            阻止事件冒泡兼容写法;
     8.DateHandle            将时间戳或new date()转换成 2018-08-03 18:30:00 格式;
     9.deepCLone             数组对象深克隆;
+    10.debounce             函数防抖;
+    11.throttle             函数节流;
 */
 class Tools {
     /* 1.绑定事件的兼容性方法 */  
@@ -94,17 +96,16 @@ class Tools {
         script.src = url;
         document.head.appendChild(script);
     }
-    // 		   用法
-    //loadScript('demo.js',"test");
-    // 	var tools = {
-    // 	test : function () {
-    // 		console.log("a");
-    // 	},
-    // 	demo : function () {
-    // 		console.log('b');
-    // 	}
-    // 	}
-    
+    /*		   用法
+    loadScript('demo.js',"test");
+    	var tools = {
+    	test : function () {
+    		console.log("a");
+    	},
+    	demo : function () {
+    		console.log('b');
+    	}
+    	}
     /* 6.封装后的Typeof方法 */
     myTypeof(target){
         var ret = typeof(target);
@@ -158,5 +159,33 @@ class Tools {
             }
         }
         return target
+    }
+    /* 10.函数防抖 */
+    debounce(fn, delay) {
+        let ts = null
+        console.log('debounce')
+        return function() {
+            clearTimeout(ts)
+            ts = setTimeout(() => {
+                fn.apply(this, arguments)
+            }, delay)
+        }
+    }
+    /* 10.函数节流 */
+    throttle(fn, delay) {
+        let ts = null,
+            first = true;
+        return function() {
+            if (first) {
+                fn.call(this, ...arguments)
+                first = false
+            }
+            if (!ts) {
+                ts = setTimeout(() => {
+                    fn.call(this, ...arguments)
+                    ts = null
+                }, delay)
+            }
+        }
     }
 }
